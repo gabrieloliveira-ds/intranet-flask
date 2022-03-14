@@ -20,6 +20,7 @@ def cadastro_funcionario():
 @app.route('/cadastro-cliente')
 def cadastro_cliente():
     return render_template('cadastro-cliente.html',title='Atenas Intranet|CADASTRO')
+    
 #rotas
 
 #inicialização 
