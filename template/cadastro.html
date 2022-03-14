@@ -3,16 +3,16 @@
     <main>
         <h1>cadastro</h1>
         <ul class="listprod">
-            <a href="cadastro-funcionario.html">
+            <a href="{{url_for('cadastro_funcionario')}}">
                 <li>
                     <p>Funcionários</p>
-                    <img src="../styles/image/icon-funcionario.jpg">
+                    <img src="{{url_for('static', filename='image/icon-funcionario.jpg')}}">
                 </li>
             </a>
-            <a href="cadastro-cliente.html">
+            <a href="{{url_for('cadastro_funcionario')}}">
                 <li>
                     <p>Clientes</p>
-                    <img src="../styles/image/icon-cliente.png">
+                    <img src="{{ url_for('static', filename='image/icon-cliente.png')}}">
                 </li>
             </a>
             <a href="cadastro-projetos.html">
