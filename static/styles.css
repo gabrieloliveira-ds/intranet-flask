@@ -1,68 +1,11 @@
-header {
-    background: #FAB70D;
-    padding   : 0px 0;
-}
+/* Config */
+    @import "./reset.css";
 
-.logo {
-    max-width : 100%;
-    max-height: 100%;
-}
+/* Framework 
+    @import "./bootstrap.css";
+    */
 
-.logo img {
-    width : 200px;
-    height: 200px;
-
-}
-
-nav {
-    position: absolute;
-    bottom  : 20px;
-    right   : 40px;
-}
-
-nav li {
-    display: inline;
-    margin : 0 0 0 15px;
-
-}
-
-nav a {
-    text-transform : uppercase;
-    color          : #000000;
-    font-weight    : bold;
-    font-size      : 24px;
-    font-family    : ubuntu;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.caixa {
-    position: relative;
-    height  : 200px;
-    width   : 100%;
-    margin  : 0 0;
-}
-
-footer {
-    text-align: center;
-    background: #2B2924;
-    padding   : auto;
-}
-
-footer img {
-    height: 200px;
-    width : 200px;
-}
-
-.copyright {
-    background    : #000000;
-    color         : #FFFFFF;
-    font-size     : 14px;
-    margin-top    : 20px;
-    padding-top   : 10px;
-    padding-bottom: 10px;
-
-}
+/* Componentes */
+    @import "./principal.css";
+    @import "./styles-cadastro-form.css";
+    @import "./styles-cadastro.css";

@@ -1,0 +1,165 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<main>
+    <h1>cadastro > funcionario</h1>
+    <h1 class="titulo">Cadastro de Funcionários</h1>
+    <form>
+        <fieldset class="dadospessoais">
+            <legend>DADOS PESSOAIS</legend>
+            <label>Nome:
+                <input class="input-text1" type="text" id="ip_Nome" required placeholder="Nome">
+            </label>
+
+            <div>
+                <legend>Sexo:</legend>
+                <label for="radio-email">
+                    <input type="radio" name="Sexo" value="v_masculino" id="ip_masculino" checked>M</label>
+
+
+                <label for="radio-telefone">
+                    <input type="radio" name="Sexo" value="v_feminino" id="ip_feminino">F</label>
+
+            </div>
+
+            <label>Data de Nascimento:
+                <input class="input-text2" type="date" id="ip_data-nascimento" required>
+            </label>
+
+            <label>RG:
+                <input class="input-text2" type="text" id="ip_RG" required placeholder="XXX.XXX.XXX-XX">
+            </label>
+
+            <label>CPF:
+                <input class="input-text2" type="text" id="ip_CPF" required placeholder="XXX.XXX.XXX-XX">
+            </label>
+
+            <label>Orgão Emissor:
+                <select name="ip_Orgão-emissor">
+                    <option value="valor1">Valor 1</option>
+                    <option value="valor2" selected>Valor 2</option>
+                    <option value="valor3">Valor 3</option>
+                </select>
+            </label>
+
+            <label>Estado civil:
+                <select name="ip_Estado-civil">
+                    <option value="">SELECIONAR</option>
+                    <option value="v_Solteiro">Solteiro</option>
+                    <option value="v_Casado">Casado</option>
+                    <option value="v_Viuvo">Viuvo</option>
+                </select>
+            </label>
+
+            <label>Email:
+                <input class="input-text1" type="email" id="ip_Email" required placeholder="Seuemail@mail.com">
+            </label>
+
+            <label>Telefone:
+                <input class="input-text2" type="tel" id="ip_Telefone" required placeholder="(DDD) X XXXX-XXXX">
+            </label>
+
+            <label>UF:
+                <select name="ip_UF">
+                    <option value="v_AC">AC</option>
+                    <option value="v_AL">AL</option>
+                    <option value="v_AM">AM</option>
+                    <option value="v_BA">BA</option>
+                    <option value="v_CE">CE</option>
+                    <option value="v_ES">ES</option>
+                    <option value="v_GO">GO</option>
+                    <option value="v_MA">MA</option>
+                    <option value="v_MT">MA</option>
+                    <option value="v_MS">MS</option>
+                    <option value="v_MG">MG</option>
+                    <option value="v_PA">PA</option>
+                    <option value="v_PB">PB</option>
+                    <option value="v_PR">PR</option>
+                    <option value="v_PE">PE</option>
+                    <option value="v_PI">PI</option>
+                    <option value="v_RJ">RJ</option>
+                    <option value="v_RN">RN</option>
+                    <option value="v_RS">RS</option>
+                    <option value="v_RO">RO</option>
+                    <option value="v_RR">RR</option>
+                    <option value="v_SC">SC</option>
+                    <option value="v_SE">SE</option>
+                    <option value="v_TO">TO</option>
+                    <option value="v_DF">DF</option>
+                </select>
+            </label>
+
+            <label>Cidade:
+                <input class="input-text2" type="text" id="ip_Cidade" required placeholder="Cidade">
+            </label>
+
+            <label>Bairro:
+                <input class="input-text2" type="text" id="ip_Bairro" required placeholder="Bairro">
+            </label>
+
+            <label>Logradouro:
+                <input class="input-text1" type="text" id="ip_Logradouro" required placeholder="Logradouro">
+            </label>
+
+            <label>Mensagem:
+                <textarea class="input-text1" cols="30" rows="10" id="mensagem"></textarea>
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>DADOS PROFISSIONAIS</legend>
+            <h1></h1>
+            <label>Salário:
+                <input class="input-text2" type="number" id="ip_salario" required placeholder="">
+            </label>
+            <label> Função:
+                <select name="ip_func" id="select_func">
+                    <option value="">-Selecionar-</option>
+                    <option value="v_engenheiro">Engenheiro</option>
+                    <option value="v_arquiteto">Arquiteto</option>
+                    <option value="v_estagiario">Estagiário</option>
+                </select>
+            </label>
+
+            <div id="numfunc">
+
+                <label class="cau" id="v_arquiteto">CAU:
+                    <input class="input-text1" type="text" id="ip_cau" required placeholder="">
+                </label>
+                <label class="crea" id="v_engenheiro">CREA:
+                    <input class="input-text1" type="text" id="ip_crea" required placeholder="">
+                </label>
+
+            </div>
+
+            <label>curso:
+                <input class="input-text1" type="text" id="ip_curso" required placeholder="">
+            </label>
+
+            <label>universidade:
+                <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
+            </label>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>DADOS BANCÁRIOS</legend>
+            <label>Banco:
+                <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
+            </label>
+            <label>num. agência:
+                <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
+            </label>
+
+            <label>conta corrente:
+                <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
+            </label>
+            <label>Pix:
+                <input class="input-text1" type="text" id="ip_universidade" required placeholder="">
+            </label>
+        </fieldset>
+        <input id="bn_submit" type="submit" value="Enviar formulário" class="buttom-submit">
+    </form>
+</main>
+{% endblock %}

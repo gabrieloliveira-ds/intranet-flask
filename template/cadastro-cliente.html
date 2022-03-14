@@ -1,0 +1,298 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    <main>
+        <h1>cadastro > clientes</h1>
+        <form>
+            <fieldset>
+                <legend>INFORMAÇÕES BÁSICAS</legend>
+                <label>Nome:
+                    <input class="input-text1" type="text" id="ip_Nome" required placeholder="Nome">
+                </label>
+                <label> Tipo de cliente:
+                    <select name="ip_cliente-tipo" id="select_cliente-tipo">
+                        <option value="">-Selecionar-</option>
+                        <option value="v_PF">PF</option>
+                        <option value="v_PJ">PJ</option>
+                    </select>
+                </label>
+            </fieldset>
+            <div id="formulario">
+                <div id="v_PF">
+                    <fieldset>
+                        <legend>PESSOA FÍSICA</legend>
+
+                        <fieldset>
+                            <Legend>Dados pessoais</Legend>
+                            <div>
+                                <label>Sexo:</label>
+                                <label for="radio-email">
+                                    <input type="radio" name="Sexo" value="v_masculino" id="ip_masculino"
+                                        checked>M</label>
+
+
+                                <label for="radio-telefone">
+                                    <input type="radio" name="Sexo" value="v_feminino" id="ip_feminino">F</label>
+                            </div>
+
+                            <label>Data de Nascimento:
+                                <input class="input-text2" type="date" id="ip_data-nascimento" required>
+                            </label>
+
+                            <label>RG:
+                                <input class="input-text2" type="text" id="ip_RG" required placeholder="XXX.XXX.XXX-XX">
+                            </label>
+
+                            <label>CPF:
+                                <input class="input-text2" type="text" id="ip_CPF" required
+                                    placeholder="XXX.XXX.XXX-XX">
+                            </label>
+                            <label>Profissão:
+                                <input class="input-text1" type="text" id="ip_profissao" required
+                                    placeholder="profissão">
+                            </label>
+                            <label>Nacionalidade:
+                                <input class="input-text1" type="text" id="ip_nacionalidade" required
+                                    placeholder="Nacionalidade">
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Contato</legend>
+                            <label>Telefone:
+                                <input class="input-text2" type="tel" id="ip_Telefone" required
+                                    placeholder="(DDD) X XXXX-XXXX">
+                            </label>
+                            <label>Email:
+                                <input class="input-text1" type="email" id="ip_Email" required
+                                    placeholder="Seuemail@mail.com">
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Endereço</legend>
+                            <label>UF:
+                                <select name="ip_UF">
+                                    <option value="v_AC">AC</option>
+                                    <option value="v_AL">AL</option>
+                                    <option value="v_AM">AM</option>
+                                    <option value="v_BA">BA</option>
+                                    <option value="v_CE">CE</option>
+                                    <option value="v_ES">ES</option>
+                                    <option value="v_GO">GO</option>
+                                    <option value="v_MA">MA</option>
+                                    <option value="v_MT">MA</option>
+                                    <option value="v_MS">MS</option>
+                                    <option value="v_MG">MG</option>
+                                    <option value="v_PA">PA</option>
+                                    <option value="v_PB">PB</option>
+                                    <option value="v_PR">PR</option>
+                                    <option value="v_PE">PE</option>
+                                    <option value="v_PI">PI</option>
+                                    <option value="v_RJ">RJ</option>
+                                    <option value="v_RN">RN</option>
+                                    <option value="v_RS">RS</option>
+                                    <option value="v_RO">RO</option>
+                                    <option value="v_RR">RR</option>
+                                    <option value="v_SC">SC</option>
+                                    <option value="v_SE">SE</option>
+                                    <option value="v_TO">TO</option>
+                                    <option value="v_DF">DF</option>
+                                </select>
+                            </label>
+
+                            <label>Cidade:
+                                <input class="input-text2" type="text" id="ip_Cidade" required placeholder="Cidade">
+                            </label>
+
+                            <label>Bairro:
+                                <input class="input-text2" type="text" id="ip_Bairro" required placeholder="Bairro">
+                            </label>
+
+                            <label>Logradouro:
+                                <input class="input-text1" type="text" id="ip_Logradouro" required
+                                    placeholder="Logradouro">
+                            </label>
+
+                            <label>Mensagem:
+                                <textarea class="input-text1" cols="30" rows="10" id="mensagem"></textarea>
+                            </label>
+                        </fieldset>
+                    </fieldset>
+                </div>
+
+                <div id="v_PJ">
+                    <fieldset>
+                        <legend>PESSOA JURÍDICA</legend>
+                        <label>CNPJ:
+                            <input class="input-text2" type="text" id="ip_CNPJ" required placeholder="">
+                        </label>
+                        <fieldset>
+                            <legend>Contato</legend>
+                            <label>Telefone:
+                                <input class="input-text2" type="tel" id="ip_Telefone" required
+                                    placeholder="(DDD) X XXXX-XXXX">
+                            </label>
+                            <label>Email:
+                                <input class="input-text1" type="email" id="ip_Email" required
+                                    placeholder="Seuemail@mail.com">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Endereço</legend>
+                            <label>UF:
+                                <select name="ip_UF">
+                                    <option value="v_AC">AC</option>
+                                    <option value="v_AL">AL</option>
+                                    <option value="v_AM">AM</option>
+                                    <option value="v_BA">BA</option>
+                                    <option value="v_CE">CE</option>
+                                    <option value="v_ES">ES</option>
+                                    <option value="v_GO">GO</option>
+                                    <option value="v_MA">MA</option>
+                                    <option value="v_MT">MA</option>
+                                    <option value="v_MS">MS</option>
+                                    <option value="v_MG">MG</option>
+                                    <option value="v_PA">PA</option>
+                                    <option value="v_PB">PB</option>
+                                    <option value="v_PR">PR</option>
+                                    <option value="v_PE">PE</option>
+                                    <option value="v_PI">PI</option>
+                                    <option value="v_RJ">RJ</option>
+                                    <option value="v_RN">RN</option>
+                                    <option value="v_RS">RS</option>
+                                    <option value="v_RO">RO</option>
+                                    <option value="v_RR">RR</option>
+                                    <option value="v_SC">SC</option>
+                                    <option value="v_SE">SE</option>
+                                    <option value="v_TO">TO</option>
+                                    <option value="v_DF">DF</option>
+                                </select>
+                            </label>
+
+                            <label>Cidade:
+                                <input class="input-text2" type="text" id="ip_Cidade" required placeholder="Cidade">
+                            </label>
+
+                            <label>Bairro:
+                                <input class="input-text2" type="text" id="ip_Bairro" required placeholder="Bairro">
+                            </label>
+
+                            <label>Logradouro:
+                                <input class="input-text1" type="text" id="ip_Logradouro" required
+                                    placeholder="Logradouro">
+                            </label>
+
+                            <label>Mensagem:
+                                <textarea class="input-text1" cols="30" rows="10" id="mensagem"></textarea>
+                            </label>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>REPRESENTANTE PJ</legend>
+
+                        <fieldset>
+                            <Legend>Dados pessoais</Legend>
+                            <div>
+                                <label>Sexo:</label>
+                                <label for="radio-email">
+                                    <input type="radio" name="Sexo" value="v_masculino" id="ip_masculino"
+                                        checked>M</label>
+
+
+                                <label for="radio-telefone">
+                                    <input type="radio" name="Sexo" value="v_feminino" id="ip_feminino">F</label>
+                            </div>
+
+                            <label>Data de Nascimento:
+                                <input class="input-text2" type="date" id="ip_data-nascimento" required>
+                            </label>
+
+                            <label>RG:
+                                <input class="input-text2" type="text" id="ip_RG" required placeholder="XXX.XXX.XXX-XX">
+                            </label>
+
+                            <label>CPF:
+                                <input class="input-text2" type="text" id="ip_CPF" required
+                                    placeholder="XXX.XXX.XXX-XX">
+                            </label>
+                            <label>Profissão:
+                                <input class="input-text1" type="text" id="ip_profissao" required
+                                    placeholder="profissão">
+                            </label>
+                            <label>Nacionalidade:
+                                <input class="input-text1" type="text" id="ip_nacionalidade" required
+                                    placeholder="Nacionalidade">
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Contato</legend>
+                            <label>Telefone:
+                                <input class="input-text2" type="tel" id="ip_Telefone" required
+                                    placeholder="(DDD) X XXXX-XXXX">
+                            </label>
+                            <label>Email:
+                                <input class="input-text1" type="email" id="ip_Email" required
+                                    placeholder="Seuemail@mail.com">
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Endereço</legend>
+                            <label>UF:
+                                <select name="ip_UF">
+                                    <option value="v_AC">AC</option>
+                                    <option value="v_AL">AL</option>
+                                    <option value="v_AM">AM</option>
+                                    <option value="v_BA">BA</option>
+                                    <option value="v_CE">CE</option>
+                                    <option value="v_ES">ES</option>
+                                    <option value="v_GO">GO</option>
+                                    <option value="v_MA">MA</option>
+                                    <option value="v_MT">MA</option>
+                                    <option value="v_MS">MS</option>
+                                    <option value="v_MG">MG</option>
+                                    <option value="v_PA">PA</option>
+                                    <option value="v_PB">PB</option>
+                                    <option value="v_PR">PR</option>
+                                    <option value="v_PE">PE</option>
+                                    <option value="v_PI">PI</option>
+                                    <option value="v_RJ">RJ</option>
+                                    <option value="v_RN">RN</option>
+                                    <option value="v_RS">RS</option>
+                                    <option value="v_RO">RO</option>
+                                    <option value="v_RR">RR</option>
+                                    <option value="v_SC">SC</option>
+                                    <option value="v_SE">SE</option>
+                                    <option value="v_TO">TO</option>
+                                    <option value="v_DF">DF</option>
+                                </select>
+                            </label>
+
+                            <label>Cidade:
+                                <input class="input-text2" type="text" id="ip_Cidade" required placeholder="Cidade">
+                            </label>
+
+                            <label>Bairro:
+                                <input class="input-text2" type="text" id="ip_Bairro" required placeholder="Bairro">
+                            </label>
+
+                            <label>Logradouro:
+                                <input class="input-text1" type="text" id="ip_Logradouro" required
+                                    placeholder="Logradouro">
+                            </label>
+
+                            <label>Mensagem:
+                                <textarea class="input-text1" cols="30" rows="10" id="mensagem"></textarea>
+                            </label>
+                        </fieldset>
+                    </fieldset>
+                </div>
+            </div>
+            <input id="bn_submit" type="submit" value="Enviar formulário" class="buttom-submit">
+
+        </form>
+
+    </main>
+    {% endblock %}
