@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    
+</head>
+
+<body>
+    
+    <header>
+        <div class="caixa">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='image/logo-completa-preta.jpeg') }}">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>home</h1>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright Atenas Engenharia - 2022 </p>
+    </footer>
+</body>
+
+</html>

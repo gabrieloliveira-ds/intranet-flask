@@ -1,0 +1,74 @@
+.titulo{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+fieldset
+{
+    border:2px solid;
+    border-radius:8px;
+}
+legend{
+    font-weight: bold;
+    font-family: ubuntu;
+}
+
+main {
+    width : 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+
+}
+fieldset{
+    margin: 25px;
+}
+
+form label,form legend {
+    display  : block;
+    font-size: 20px;
+    margin   : 0 0 15px;
+}
+form select{
+    display: inline;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.input-text1 {
+    display: block;
+    margin : 0 0 10px;
+    padding: 9px 5px;
+    width  : 50%;
+}
+.input-text2 {
+    display: block;
+    margin : 0 0 10px;
+    padding: 9px 5px;
+    width  : 20%;
+}
+.input-checkbox{
+    margin: 20px 5px;
+}
+.buttom-submit{
+    width: 40%;
+    margin-top: 10px;
+    padding: 12px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 150ms all ;
+}
+
+.buttom-submit:hover{
+    
+    transform: scale(1.01);
+    background-color: darkorange;
+}

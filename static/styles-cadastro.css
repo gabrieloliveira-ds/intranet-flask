@@ -1,0 +1,47 @@
+.listprod {
+    width  : 940px;
+    margin : 0 auto;
+    padding: 50px 0;
+}
+
+
+.listprod li {
+    display       : inline-block;
+    text-align    : center;
+    width         : 30%;
+    vertical-align: top;
+    background    : #ffffff;
+    margin        : 0 1.5%;
+    padding       : 30px 20px;
+    box-sizing    : border-box;
+    border-color  : black;
+    border-width  : 2px;
+    border-style  : solid;
+    border-radius : 10px 40px 40px 40px;
+}
+
+.listprod li p {
+    font-size  : 25px;
+    font-family    : ubuntu;
+    font-weight: bold;
+    margin-top : 10px;
+}
+
+.listprod li img {
+    padding: 40px ;
+    width : 120px;
+    height: 120px;
+}
+
+.listprod li:hover {
+    border-color: #C78C19;
+}
+
+.listprod li:hover p {
+    color    : #FAB70D;
+    font-size: 30px;
+}
+
+.listprod li:active {
+    border-color: #42c719;
+}
